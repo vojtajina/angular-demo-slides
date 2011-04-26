@@ -1,0 +1,120 @@
+#1
+angular is client side framework for rich apps like docs, gmail, (desktop apps in browser)
+FEEL FREE TO ASK QUESTION DURING PRESENTATION
+
+#2
+client side framework - nothing about server, designed to work with RESTful service etc.. with service that provides just data
+
+complete solution - app structure (like server frameworks: spring, django, rails, symfony, ...) - good for code organisation, better maintainance
+
+testing is important -> documents don't have to be tested, apps do !!!
+testing emphasis (dependency injection, app structure, no global space)
+-> whole testing environment (unit, e2e, continuous build)
+you need:
+- environment (angular does have !!!)
+- experience (knowledge)
+- best practices (angular does !!!)
+
+designed to work with existing libraries (jstd, jasmine, jquery, showdown, syntax highlighter)
+
+extends html - higher abstraction, compiled - user can define it's own markupts, widgets
+
+two way data binding - save a lot of coding, will show later
+
+#3 - #4 history evolution:
+1/ html was designed for documents, not apps
+2/ doing all on server (browser dumb terminal)
+-> server frameworks with skeleton of the app (bad testability, but improving): Rails, Django, Spring, Symfony, JSF, ...)
+- reloading whole pages, effort on servers -> scaling problems
+
+3/ start doing on client (better browsers)
+- DOM manipulation, we don't need to ask server...
+-> jQuery, Prototype, Closure, ...
+
+4/ AJAX
+-> moving more logic to client (browser)
+
+5/ ExtJS, Cappucino, jQuery UI, ... abstraction of html/js (imperative approach - lots of coding)
+- problems with testability and codebase maintainability
+- mixing concerns, difficult to design big app
+- just UI components, not abstraction for app logic
+
+6/ angular
+- uses existing libraries, puts them together (jQuery for DOM manipulation)
+- extends html markup -> declarative approach, less coding
+- complete structure (like server frameworks, but testing in mind !!!)
+
+- not the only way, we are still looking for new ideas
+
+#5 simple document, rendered by server (rails, django, ...)
+
+#6 pure js
+- cross browser issues
+- readability -> maintainability (new developers, new features - more time reading code than writing)
+
+#7 jquery
+
+#8 - #9 angular
+- two way binding (greeting expression)
+- extending html (ng:init), custom markups ! (DSL)
+
+#10 jquery
+- pure js !! :-D even longer
+- binding !!! lots of coding, registering events, etc...
+two way binding = no code
+-> declarative
+
+#11 - two way binding -> no coding :-D
+
+#12 - #13 again two way binding... example
+
+#14 - #15
+jQuery - fantastic framework especially for DOM manipulation
+- impossible to test with current design
+- no view (DOM manipulation) / logic separation
+- is possible, but users don't know how to do that !!!
+- angular is framework - skeleton -> helps users to design testable architecture
+
+#17
+higher abstraction: 
+- extended html
+- services
+- filters
+- widgets
+
+#18
+XHR service = abstraction of ajax request
+- testable design !!!
+- you can test Greeter controller without any DOM, without any request -> easy = fast unit test...
+- you don't have to test XHR service (don't test framwork / library), you don't have to test binding...
+(you can do e2e tests as well)
+
+- collaborators in contructor -> readable, you know, what it does require
+-> testable (mocked)
+- injected by DI !
+
+#19 - resource: service for RESTful service, again abstraction
+
+#20
+show required
+show invalid email
+custom validators
+
+#21
+show inputs, format links
+
+#22
+custom widget
+
+#23 - #27
+TESTING
+- documents don't have to be tested, apps do !!!
+- provides full testing + continuous build environment
+- app framework with testable design
+- angular takes care of most DOM mainipulation
+- strict separation (logic / view dom)
+
+#28 links
+google internal projects (2 big, about 10 small)
+outside projects - there will be a list on new web site (coming soon)
+slides done by angular - checkout code at github, done by misko
